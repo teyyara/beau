@@ -1,0 +1,19 @@
+name: Beau Burger Smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  static-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Static smoke
+        run: node tests/static-smoke.cjs
