@@ -43,7 +43,7 @@
     if(moveFocus)tab.focus();
   }
 
-  tabs.forEach((tab,index)=>tab.addEventListener('click',()=>activateTab(tab)));
+  tabs.forEach(tab=>tab.addEventListener('click',()=>activateTab(tab)));
   tabs.forEach((tab,index)=>tab.addEventListener('keydown',e=>{
     let next=-1;
     if(e.key==='ArrowRight')next=(index+1)%tabs.length;
@@ -105,24 +105,52 @@
   const year=document.querySelector('#year');
   if(year)year.textContent=new Date().getFullYear();
 
-  function updateOpenStatus(){
-    const el=document.querySelector('#openStatus'); if(!el)return;
+  const WEEKDAYS=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+  const BUSINESS_HOURS={
+    lundi:{start:15*60,end:30},
+    mardi:{start:15*60,end:30},
+    mercredi:{start:15*60,end:30},
+    jeudi:{start:15*60,end:30},
+    vendredi:{start:15*60,end:30},
+    samedi:{start:9*60,end:30},
+    dimanche:null
+  };
+
+  function getCasablancaClock(){
     const now=new Date();
     const parts=new Intl.DateTimeFormat('fr-FR',{
-      timeZone:'Africa/Casablanca',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'
+      timeZone:'Africa/Casablanca',
+      weekday:'long',
+      hour:'2-digit',
+      minute:'2-digit',
+      hourCycle:'h23'
     }).formatToParts(now);
-    const weekday=parts.find(p=>p.type==='weekday')?.value||'';
-    const hour=Number(parts.find(p=>p.type==='hour')?.value||0);
-    const minute=Number(parts.find(p=>p.type==='minute')?.value||0);
+    return {
+      weekday:(parts.find(p=>p.type==='weekday')?.value||'').toLowerCase(),
+      hour:Number(parts.find(p=>p.type==='hour')?.value||0),
+      minute:Number(parts.find(p=>p.type==='minute')?.value||0)
+    };
+  }
+
+  function isOpenInCasablanca({weekday,hour,minute}){
     const mins=hour*60+minute;
-    const day=weekday.toLowerCase();
-    let open=false;
-    if(day!=='dimanche'){
-      const start=day==='samedi'?9*60:15*60;
-      open=mins>=start || mins<30;
-    }
+    const today=BUSINESS_HOURS[weekday];
+    if(today&&mins>=today.start)return true;
+
+    const dayIndex=WEEKDAYS.indexOf(weekday);
+    if(dayIndex<0)return false;
+    const previous=WEEKDAYS[(dayIndex+6)%7];
+    const previousHours=BUSINESS_HOURS[previous];
+    return Boolean(previousHours&&mins<previousHours.end);
+  }
+
+  function updateOpenStatus(){
+    const el=document.querySelector('#openStatus'); if(!el)return;
+    const open=isOpenInCasablanca(getCasablancaClock());
     el.textContent=open?'OUVERT MAINTENANT':'FERMÉ ACTUELLEMENT';
     el.classList.toggle('closed',!open);
   }
+
   updateOpenStatus();
+  window.setInterval(updateOpenStatus,60000);
 })();
