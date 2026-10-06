@@ -4,22 +4,24 @@
 |---|---|
 | Active keyphrase | there is a brand for a restaurant in Oujda, Morocco called Beau Burger, I want you to make them a full production ready website. |
 | Run ID | beau-20261006-1915 |
-| Current loop | 003 |
-| Candidate | candidate-003 |
+| Current loop | 004 |
+| Candidate | candidate-004 |
 | Current state | WAITING_FOR_CONTINUE |
 | Research | COMPLETE |
-| Latest code checkpoint | 478d85744a63d0eb1998fcfe3e645bb357d05a48 |
-| State handoff commit | 0d6a3bd6aa77d0bed940f1546b79cb241b1232c8 |
+| Latest code checkpoint | ced7782ca90c71090cd554d7b223ce3ef2474cfe |
+| State handoff commit | c6f14fbf0aa17c1fb48dc38e4f569eae7ffda2dd |
 | Validation | PASS_WITH_LIMITATIONS |
 
 ## Latest loop change
-Corrected the opening-status clock logic around midnight. The previous implementation could incorrectly report Monday 00:00–00:29 as open despite Sunday being closed. The schedule is now evaluated using both today's opening window and the previous day's overnight closing window. The status also refreshes every 60 seconds.
+Added a zero-install repository smoke-test harness at `tests/static-smoke.cjs` and wired it into GitHub Actions via `.github/workflows/smoke.yml`. The harness checks document metadata, Restaurant structured data, navigation/CTA wiring, menu tab relationships, lazy-loading hints, visible focus hooks, keyboard navigation hooks, the external-host allowlist, project configuration, and referenced local assets.
+
+Also advanced `project.config.json` to Loop 004 / candidate-004.
 
 ## Regression scope
-No business content, pricing, address, phone, hours displayed on the page, Instagram destination, or primary CTA destination changed. Only the clock interpretation and refresh behavior changed.
+No business facts or commercial destinations changed in this loop. The change is test/CI infrastructure and project-state bookkeeping.
 
 ## Evidence limits
-- This loop was source-validated; a post-change browser execution runner is not exposed in the current environment.
+- The new smoke harness is committed but its execution is not independently observed in this environment.
 - axe-core unavailable; automated WCAG audit not claimed.
 - Firefox/WebKit/Safari unavailable; cross-browser certification not claimed.
 - Screen reader environment unavailable.
@@ -33,5 +35,10 @@ python -m http.server 4173
 ```
 Open `http://127.0.0.1:4173/`.
 
+## Validation command
+```bash
+node tests/static-smoke.cjs
+```
+
 ## State
-LOOP COMPLETE. Candidate-003 is checkpointed on the authorized remote. Waiting for the standalone `CONTINUE` command for Loop 004.
+LOOP COMPLETE. Candidate-004 is checkpointed on the authorized remote. Waiting for the standalone `CONTINUE` command for Loop 005.
