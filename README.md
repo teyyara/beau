@@ -12,6 +12,16 @@ python -m http.server 4173
 
 Then open `http://127.0.0.1:4173/`.
 
+## Validate locally
+
+Node.js 20+ is enough for the dependency-free repository smoke test:
+
+```bash
+node tests/static-smoke.cjs
+```
+
+GitHub Actions also runs the same smoke test on pushes to `main` and pull requests.
+
 ## Verified public business data
 
 - Address: n5, Rue Annakhil, Oujda 34000, Morocco
@@ -30,3 +40,7 @@ The canonical URL and sitemap are intentionally deferred until the real producti
 ## Content provenance
 
 Public business data and menu transcription are documented under `evidence/research/`. Images from Restaurant Guru are used as remote progressive-enhancement imagery with local SVG fallbacks so the site remains visually usable if those remote assets fail.
+
+## CI
+
+The repository includes a zero-paid-dependency smoke workflow at `.github/workflows/smoke.yml`.
