@@ -5,10 +5,10 @@
   "loop":4,
   "state":"WAITING_FOR_CONTINUE",
   "candidate":"candidate-004",
-  "latest_known_good_commit":"ced7782ca90c71090cd554d7b223ce3ef2474cfe",
-  "latest_checkpoint_commit":"ced7782ca90c71090cd554d7b223ce3ef2474cfe",
+  "latest_known_good_commit":"5bcd24c63d93dd7e556fdba9ef052f4b3ba24ac2",
+  "latest_checkpoint_commit":"5bcd24c63d93dd7e556fdba9ef052f4b3ba24ac2",
   "validation":"PASS_WITH_LIMITATIONS",
-  "next_high_value_work":"runtime execution of the new smoke harness plus broader browser/accessibility/performance validation",
-  "blocked_items":["production domain/hosting not provisioned","axe-core/Lighthouse/Firefox/WebKit/Safari unavailable","screen reader environment unavailable","third-party image ownership/license not verified"],
+  "next_high_value_work":"runtime execution of static smoke plus broader browser/accessibility/performance validation",
+  "blocked_items":["GitHub Actions execution not observed (0 runs returned)","production domain/hosting not provisioned","axe-core/Lighthouse/Firefox/WebKit/Safari unavailable","screen reader environment unavailable","third-party image ownership/license not verified"],
   "research":"COMPLETE"
 }
