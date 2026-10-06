@@ -67,10 +67,10 @@
         <div class="hero-media">
           <div class="hero-card">
             <span class="card-label">BEAU N°6</span>
-            <img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/ceba-Restaurant-Beau-Burger-dishes.jpg" alt="Burger signature Beau Burger">
+            <img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/ceba-Restaurant-Beau-Burger-dishes.jpg" alt="Burger signature Beau Burger" fetchpriority="high" decoding="async">
             <div class="hero-card-caption"><strong>Spicy Honey</strong><span>Beau N°6</span></div>
           </div>
-          <div class="stamp">OUJDA<br><small>BEAU BURGER</small></div>
+          <div class="stamp" aria-hidden="true">OUJDA<br><small>BEAU BURGER</small></div>
         </div>
       </div>
     </section>
@@ -92,12 +92,12 @@
         </div>
 
         <div class="menu-tabs" role="tablist" aria-label="Catégories du menu">
-          <button class="menu-tab is-active" role="tab" aria-selected="true" aria-controls="menu-panel-beef" data-filter="beef">Burgers viande</button>
-          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="menu-panel-chicken" data-filter="chicken">Burger chicken</button>
-          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="menu-panel-sides" data-filter="sides">Frites & salades</button>
+          <button class="menu-tab is-active" role="tab" tabindex="0" aria-selected="true" aria-controls="menu-panel-beef" id="tab-beef" data-filter="beef">Burgers viande</button>
+          <button class="menu-tab" role="tab" tabindex="-1" aria-selected="false" aria-controls="menu-panel-chicken" id="tab-chicken" data-filter="chicken">Burger chicken</button>
+          <button class="menu-tab" role="tab" tabindex="-1" aria-selected="false" aria-controls="menu-panel-sides" id="tab-sides" data-filter="sides">Frites & salades</button>
         </div>
 
-        <div class="menu-panel" id="menu-panel-beef" role="tabpanel">
+        <div class="menu-panel" id="menu-panel-beef" role="tabpanel" aria-labelledby="tab-beef" tabindex="0">
           <div class="menu-grid">
             <article class="menu-card featured"><div class="menu-index">N1</div><div><h3>Truffe</h3><p>Double smash · fromage · champignons de Paris · sauce truffe maison</p></div><strong>65 DH</strong></article>
             <article class="menu-card"><div class="menu-index">N2</div><div><h3>Jalapeños</h3><p>Double smash · cheddar · sauce jalapeño · oignons frais</p></div><strong>60 DH</strong></article>
@@ -108,7 +108,7 @@
           </div>
         </div>
 
-        <div class="menu-panel hidden" id="menu-panel-chicken" role="tabpanel">
+        <div class="menu-panel hidden" id="menu-panel-chicken" role="tabpanel" aria-labelledby="tab-chicken" tabindex="0">
           <div class="menu-grid">
             <article class="menu-card featured"><div class="menu-index">N10</div><div><h3>Le Ranch</h3><p>Escalope de poulet panée · iceberg · cheddar · sauce ranch</p></div><strong>55 DH</strong></article>
             <article class="menu-card"><div class="menu-index">N11</div><div><h3>Spicy Chicken</h3><p>Escalope de poulet panée · iceberg · cheddar · sauce spicy maison</p></div><strong>50 DH</strong></article>
@@ -118,7 +118,7 @@
           </div>
         </div>
 
-        <div class="menu-panel hidden" id="menu-panel-sides" role="tabpanel">
+        <div class="menu-panel hidden" id="menu-panel-sides" role="tabpanel" aria-labelledby="tab-sides" tabindex="0">
           <div class="menu-grid">
             <article class="menu-card"><div class="menu-index">F1</div><div><h3>Frites classiques</h3><p>Portion généreuse, prêtes à accompagner ton burger</p></div><strong>15 DH</strong></article>
             <article class="menu-card"><div class="menu-index">F2</div><div><h3>Frites cheddar</h3><p>Frites nappées de cheddar</p></div><strong>30 DH</strong></article>
@@ -136,7 +136,7 @@
     <section id="experience" class="section experience-section section-dark">
       <div class="container experience-grid">
         <div class="experience-art">
-          <div class="art-frame"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/cf36-Beau-Burger-Oujda-french-fries.jpg" alt="Burger et frites Beau Burger"></div>
+          <div class="art-frame"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/cf36-Beau-Burger-Oujda-french-fries.jpg" alt="Burger et frites Beau Burger" loading="lazy" decoding="async"></div>
           <div class="scribble" aria-hidden="true">fait<br>avec<br>envie.</div>
         </div>
         <div class="experience-copy">
@@ -153,8 +153,8 @@
       <div class="container">
         <div class="section-heading centered"><div class="eyebrow warm"><span class="dot" aria-hidden="true"></span> À table</div><h2>Ça se regarde. <em>Ça se mange.</em></h2></div>
         <div class="gallery-grid">
-          <figure class="gallery-tile tall"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/ceba-Restaurant-Beau-Burger-dishes.jpg" alt="Burger signature Beau N°6"><figcaption>BEAU N°6 · SPICY HONEY</figcaption></figure>
-          <figure class="gallery-tile"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/cf36-Beau-Burger-Oujda-french-fries.jpg" alt="Beau Burger avec frites"><figcaption>BURGER · FRITES · SAUCE</figcaption></figure>
+          <figure class="gallery-tile tall"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/ceba-Restaurant-Beau-Burger-dishes.jpg" alt="Burger signature Beau N°6" loading="lazy" decoding="async"><figcaption>BEAU N°6 · SPICY HONEY</figcaption></figure>
+          <figure class="gallery-tile"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/cf36-Beau-Burger-Oujda-french-fries.jpg" alt="Beau Burger avec frites" loading="lazy" decoding="async"><figcaption>BURGER · FRITES · SAUCE</figcaption></figure>
           <figure class="gallery-tile dark-tile"><div class="quote-mark">“</div><blockquote>Vraiment beau burger.</blockquote><span>Avis public récent</span></figure>
         </div>
       </div>
@@ -172,7 +172,7 @@
           </div>
         </div>
         <div class="hours-card">
-          <div class="hours-top"><span>HORAIRES</span><span id="openStatus" class="status-pill">Vérification…</span></div>
+          <div class="hours-top"><span>HORAIRES</span><span id="openStatus" class="status-pill" role="status" aria-live="polite">Vérification…</span></div>
           <div class="hours-row"><span>Lundi — Vendredi</span><strong>15:00 — 00:30</strong></div>
           <div class="hours-row"><span>Samedi</span><strong>09:00 — 00:30</strong></div>
           <div class="hours-row"><span>Dimanche</span><strong>Fermé</strong></div>
@@ -204,9 +204,9 @@
       <button class="modal-close" type="button" aria-label="Fermer" data-close-modal>×</button>
       <h2 id="menuModalTitle">La carte Beau Burger</h2>
       <p>Version de carte publiée publiquement, utile pour consulter les intitulés et prix observés.</p>
-      <img src="assets/menu-placeholder.svg" data-src="https://menu02.restaurantguru.com/m4/menu-Beau-Burger-Restaurant-ts2.jpg" alt="Carte Beau Burger">
+      <img src="assets/menu-placeholder.svg" data-src="https://menu02.restaurantguru.com/m4/menu-Beau-Burger-Restaurant-ts2.jpg" alt="Carte Beau Burger" loading="lazy" decoding="async">
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
