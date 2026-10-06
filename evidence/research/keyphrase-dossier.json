@@ -1,0 +1,10 @@
+{
+  "active_keyphrase":"there is a brand for a restaurant in Oujda, Morocco called Beau Burger, I want you to make them a full production ready website.",
+  "normalized_interpretation":"production-oriented restaurant website for Beau Burger in Oujda",
+  "research_timestamp":"2026-10-06T19:15:00+01:00",
+  "facts":{"name":"Beau Burger","address":"n5, Rue Annakhil, Oujda 34000, Morocco","phone":"+212668080508","instagram":"https://www.instagram.com/beauburgeroujda/","google_rating":"4.8/5","price_range":"MAD 50–100/person","services":["dine-in","takeaway","delivery","outdoor seating","booking"]},
+  "hours":{"monday":"15:00-00:30","tuesday":"15:00-00:30","wednesday":"15:00-00:30","thursday":"15:00-00:30","friday":"15:00-00:30","saturday":"09:00-00:30","sunday":"closed"},
+  "menu_items":["N1 Truffe 65 DH","N2 Jalapeños 60 DH","N3 Original 60 DH","N4 Beau 60 DH","N5 Le Frenchy 95 DH","N6 Hash Brown 55 DH","N10 Le Ranch 55 DH","N11 Spicy Chicken 50 DH","N12 Nashville 60 DH","N14 Le Crunch 55 DH","N15 Chickenzilla 75 DH"],
+  "unknowns":["official domain","online ordering provider","image license","holiday/Ramadan hours"],
+  "completion":"COMPLETE"
+}
