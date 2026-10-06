@@ -1,0 +1,13 @@
+{
+  "project_name":"Beau Burger Oujda production website",
+  "keyphrase":"there is a brand for a restaurant in Oujda, Morocco called Beau Burger, I want you to make them a full production ready website.",
+  "project_class":"W1",
+  "stack":"static HTML/CSS/JS",
+  "primary_locale":"fr-MA",
+  "timezone":"Africa/Casablanca",
+  "domain_assumption":null,
+  "deployment":"static hosting compatible",
+  "checkout":"not included; phone CTA used",
+  "accessibility_target":"WCAG 2.2 AA",
+  "loop":1
+}
