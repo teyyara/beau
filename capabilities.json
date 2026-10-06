@@ -1,0 +1,17 @@
+{
+  "chromium":true,
+  "firefox":false,
+  "webkit":false,
+  "mobile_emulation":true,
+  "real_mobile_device":false,
+  "screen_reader":false,
+  "axe_core":false,
+  "lighthouse":false,
+  "network_capture":true,
+  "local_http_server":true,
+  "github_read":true,
+  "github_write":true,
+  "github_push_via_connector":true,
+  "production_access":false,
+  "remote_field_rum":false
+}
