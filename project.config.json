@@ -9,5 +9,6 @@
   "deployment":"static hosting compatible",
   "checkout":"not included; phone CTA used",
   "accessibility_target":"WCAG 2.2 AA",
-  "loop":1
+  "loop":4,
+  "candidate":"candidate-004"
 }
