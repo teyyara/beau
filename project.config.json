@@ -9,6 +9,12 @@
   "deployment":"static hosting compatible",
   "checkout":"not included; phone CTA used",
   "accessibility_target":"WCAG 2.2 AA",
-  "loop":4,
-  "candidate":"candidate-004"
+  "rulebook_version":"AEOS v3",
+  "rulebook_sha256":"492ce2fc9bbaec54258ea493fb9a71bf41e4857cee4ead19016e36f57932192e",
+  "product_contract":"evidence/product-contract-v1.md",
+  "requirements_baseline":"evidence/requirements-v1.json",
+  "assumptions_ledger":"evidence/assumptions-v1.md",
+  "decision_ledger":"evidence/decisions-v1.md",
+  "loop":5,
+  "candidate":"candidate-005"
 }
