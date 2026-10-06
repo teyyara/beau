@@ -1,0 +1,24 @@
+{
+  "artifact_kind":"static_site_source",
+  "release_candidate":"candidate-001",
+  "generated_at":"2026-10-06T19:15:00+01:00",
+  "notes":"Source-focused manifest. AEOS state/status are evolving metadata; browser screenshots were retained locally as validation evidence and are not required to run the site.",
+  "files":[
+    {"path":".gitignore","sha256":"97dc3430bd0faa9d3ade11fcdd2b385e6ced76d6191e579606c9bca3b02435ce","bytes":95},
+    {"path":"README.md","sha256":"4723af3fe64dfefc45702b2a45507e8848f4735f8ae66fe11b3a87090543a749","bytes":1214},
+    {"path":"assets/burger-placeholder.svg","sha256":"bf32e9043264207d48dac824bc9df4cdd27d9236c70556e605c496b1be2f7205","bytes":904},
+    {"path":"assets/favicon.svg","sha256":"8ce5f62cd888c32c09e94de359091d32431dcf2b74fcba6c13bd40c6bbbe23a1","bytes":241},
+    {"path":"assets/menu-placeholder.svg","sha256":"742968c5381dc51f282c62167504d3d357ecb1bea228bb4889bcc2bcef6434c2","bytes":1915},
+    {"path":"capabilities.json","sha256":"693da0ae172481c5085e5b7cffb634fbc033d41efda18e26f48379874e8cd310","bytes":375},
+    {"path":"evidence/loop-001/runtime-report.json","sha256":"109a27045d63e51b44160267c663849ab7fc2cae5db05e2fd87e9d339cf3cbfe","bytes":566},
+    {"path":"evidence/loop-001/validation.md","sha256":"ad3f335acc0a54663656463aae08cc6d3145dfa9af7338304114a1427d9e255e","bytes":2290},
+    {"path":"evidence/research/keyphrase-dossier.json","sha256":"47debe56404b4eaee58f24af5127f8d9b97b662967986daf5674a326aaf86ffd","bytes":1163},
+    {"path":"evidence/research/keyphrase-dossier.md","sha256":"4dcfcf26cd5fa454d6462adb7ddd785d451c7624b6d3e1e56435f2ca9bd888d8","bytes":3550},
+    {"path":"index.html","sha256":"3c3552964d3068229d9bd374dc1d724574d98f1f290b3b2d8d06e216c07984ba","bytes":14885},
+    {"path":"project.config.json","sha256":"667633b449764e66597895af82b2b88012c7eeee0964e2cc72651f65f1227453","bytes":493},
+    {"path":"robots.txt","sha256":"16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95","bytes":23},
+    {"path":"script.js","sha256":"7fb846b4bce15b214561e3571ca83a70fc14cc4d7df36ad04b8b3045f6c33752","bytes":2886},
+    {"path":"site.webmanifest","sha256":"7ee67b929f00689b324117797c6c6de53c1ccba1d0d9515a2747b65f35fc3f5d","bytes":224},
+    {"path":"styles.css","sha256":"633c6e3bceddd42e378a01662ea71dd303627cafb9c07bed2dd3ff8984d803d4","bytes":12631}
+  ]
+}
