@@ -8,22 +8,23 @@
 | Candidate | candidate-004 |
 | Current state | WAITING_FOR_CONTINUE |
 | Research | COMPLETE |
-| Latest code checkpoint | ced7782ca90c71090cd554d7b223ce3ef2474cfe |
-| State handoff commit | c6f14fbf0aa17c1fb48dc38e4f569eae7ffda2dd |
+| Latest checkpoint | 5bcd24c63d93dd7e556fdba9ef052f4b3ba24ac2 |
+| State handoff | 88b5653d20d2c0d0334d4a78b8e44ab6e927ac76 |
 | Validation | PASS_WITH_LIMITATIONS |
 
 ## Latest loop change
-Added a zero-install repository smoke-test harness at `tests/static-smoke.cjs` and wired it into GitHub Actions via `.github/workflows/smoke.yml`. The harness checks document metadata, Restaurant structured data, navigation/CTA wiring, menu tab relationships, lazy-loading hints, visible focus hooks, keyboard navigation hooks, the external-host allowlist, project configuration, and referenced local assets.
+Added a dependency-free Node.js smoke-test harness at `tests/static-smoke.cjs`, GitHub Actions wiring at `.github/workflows/smoke.yml`, and README instructions for local validation. The harness checks the static site's critical structural, semantic, CTA, menu, image-loading, keyboard-accessibility hooks, configuration, external-host, and local-asset invariants.
 
-Also advanced `project.config.json` to Loop 004 / candidate-004.
+## Evidence
+GitHub Actions was queried after the pushes and returned zero workflow runs. CI execution is therefore NOT OBSERVED and is not counted as PASS.
 
 ## Regression scope
-No business facts or commercial destinations changed in this loop. The change is test/CI infrastructure and project-state bookkeeping.
+No business facts, prices, address, phone number, hours displayed on the page, Instagram destination, or primary CTA destination changed in Loop 004.
 
-## Evidence limits
-- The new smoke harness is committed but its execution is not independently observed in this environment.
+## Remaining evidence gaps
+- Runtime smoke execution has not been independently observed.
 - axe-core unavailable; automated WCAG audit not claimed.
-- Firefox/WebKit/Safari unavailable; cross-browser certification not claimed.
+- Firefox/WebKit/Safari unavailable.
 - Screen reader environment unavailable.
 - Lighthouse and field RUM unavailable.
 - Production domain/hosting not provisioned.
@@ -35,7 +36,7 @@ python -m http.server 4173
 ```
 Open `http://127.0.0.1:4173/`.
 
-## Validation command
+## Local validation
 ```bash
 node tests/static-smoke.cjs
 ```
