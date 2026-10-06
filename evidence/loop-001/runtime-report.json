@@ -1,0 +1,6 @@
+{
+  "desktop":{"overflow":false,"menu_tabs":true,"menu_modal_open_close":true,"nav":true,"page_errors":[]},
+  "mobile":{"overflow":false,"menu_tabs":true,"menu_modal_open_close":true,"nav":true,"page_errors":[]},
+  "tablet":{"overflow":false,"menu_tabs":true,"menu_modal_open_close":true,"nav":true,"page_errors":[]},
+  "large-desktop":{"overflow":false,"menu_tabs":true,"menu_modal_open_close":true,"nav":true,"page_errors":[]}
+}
