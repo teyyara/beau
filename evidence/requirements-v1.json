@@ -1,0 +1,20 @@
+{
+  "contract":"evidence/product-contract-v1.md",
+  "version":"1.0",
+  "requirements":[
+    {"id":"REQ-001","risk":"R2","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-001/runtime-report.json"]},
+    {"id":"REQ-002","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-001/runtime-report.json"]},
+    {"id":"REQ-003","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-001/runtime-report.json"]},
+    {"id":"REQ-004","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-002/validation.md"]},
+    {"id":"REQ-005","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-001/runtime-report.json"]},
+    {"id":"REQ-006","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/research/keyphrase-dossier.md"]},
+    {"id":"REQ-007","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/research/keyphrase-dossier.md"]},
+    {"id":"REQ-008","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/research/keyphrase-dossier.md"]},
+    {"id":"REQ-009","risk":"R2","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-003/validation.md"]},
+    {"id":"REQ-010","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-001/validation.md"]},
+    {"id":"REQ-011","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-001/validation.md"]},
+    {"id":"REQ-012","risk":"R2","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/research/keyphrase-dossier.md"]},
+    {"id":"REQ-013","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-004/validation.md"]},
+    {"id":"REQ-014","risk":"R1","state":"PASS_WITH_LIMITATIONS","evidence":["evidence/loop-004/validation.md"]}
+  ]
+}
