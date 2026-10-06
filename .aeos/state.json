@@ -2,13 +2,13 @@
   "run_id":"beau-20261006-1915",
   "keyphrase":"there is a brand for a restaurant in Oujda, Morocco called Beau Burger, I want you to make them a full production ready website.",
   "rulebook_version":"AEOS v3",
-  "loop":2,
+  "loop":3,
   "state":"WAITING_FOR_CONTINUE",
-  "candidate":"candidate-002",
-  "latest_known_good_commit":"e8bd7d345b0dc7e9a2f21f34e85615148eff402c",
-  "latest_checkpoint_commit":"e8bd7d345b0dc7e9a2f21f34e85615148eff402c",
+  "candidate":"candidate-003",
+  "latest_known_good_commit":"478d85744a63d0eb1998fcfe3e645bb357d05a48",
+  "latest_checkpoint_commit":"478d85744a63d0eb1998fcfe3e645bb357d05a48",
   "validation":"PASS_WITH_LIMITATIONS",
-  "next_high_value_work":"runtime verification with browser/axe/Lighthouse equivalents, then deployment artifact hardening",
+  "next_high_value_work":"add isolated automated validation harness and deepen deployment/readiness checks where capabilities permit",
   "blocked_items":["production domain/hosting not provisioned","axe-core/Lighthouse/Firefox/WebKit/Safari unavailable","screen reader environment unavailable","third-party image ownership/license not verified"],
   "research":"COMPLETE"
 }
