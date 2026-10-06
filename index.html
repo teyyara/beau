@@ -1,1 +1,212 @@
-<!-- Bootstrap file for AEOS Loop 001; replaced by full candidate in checkpoint commit. -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11100d">
+  <meta name="description" content="Beau Burger — smash burgers à Oujda. Menu, adresse, horaires et contact.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Beau Burger — Le smash, à la façon Beau.">
+  <meta property="og:description" content="Beau Burger à Oujda. Menu, adresse, horaires et contact.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>Beau Burger — Le smash, à la façon Beau.</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Restaurant",
+    "name":"Beau Burger",
+    "description":"Restaurant de burgers à Oujda, Maroc.",
+    "telephone":"+212668080508",
+    "address":{"@type":"PostalAddress","streetAddress":"n5, Rue Annakhil","addressLocality":"Oujda","postalCode":"34000","addressCountry":"MA"},
+    "servesCuisine":["Burgers","Fast food"],
+    "priceRange":"MAD 50-100",
+    "sameAs":["https://www.instagram.com/beauburgeroujda/"],
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"00:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"00:30"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Beau Burger — accueil"><span class="brand-script">Beau</span><span class="brand-rest">BURGER</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+        <a href="#menu">Menu</a>
+        <a href="#experience">L'expérience</a>
+        <a href="#infos">Infos</a>
+        <a class="nav-cta" href="tel:+212668080508">Commander / Réserver</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section-dark">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Oujda · Rue Annakhil</div>
+          <h1>Le smash,<br><em>à la façon Beau.</em></h1>
+          <p>Des burgers qui vont droit au but : généreux, réconfortants, et pensés pour être dévorés sur place ou à emporter.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Découvrir le menu <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="tel:+212668080508">Appeler Beau <span aria-hidden="true">⌕</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Informations rapides">
+            <div><strong>4,8 ★</strong><span>Google</span></div>
+            <div><strong>MAD 50–100</strong><span>budget moyen</span></div>
+            <div><strong>Sur place</strong><span>à emporter · livraison</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card">
+            <span class="card-label">BEAU N°6</span>
+            <img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/ceba-Restaurant-Beau-Burger-dishes.jpg" alt="Burger signature Beau Burger">
+            <div class="hero-card-caption"><strong>Spicy Honey</strong><span>Beau N°6</span></div>
+          </div>
+          <div class="stamp">OUJDA<br><small>BEAU BURGER</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-bar" aria-label="Services Beau Burger">
+      <div class="container proof-row">
+        <span>BURGERS</span><span>CHICKEN</span><span>FRITES</span><span>SALADES</span><span>TAKEAWAY</span><span>DELIVERY</span>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-heading row-heading">
+          <div>
+            <div class="eyebrow warm"><span class="dot" aria-hidden="true"></span> Le menu</div>
+            <h2>Choisis ton <em>Beau.</em></h2>
+          </div>
+          <button class="text-link" id="openMenuImage" type="button">Voir la carte complète <span aria-hidden="true">↗</span></button>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Catégories du menu">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" aria-controls="menu-panel-beef" data-filter="beef">Burgers viande</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="menu-panel-chicken" data-filter="chicken">Burger chicken</button>
+          <button class="menu-tab" role="tab" aria-selected="false" aria-controls="menu-panel-sides" data-filter="sides">Frites & salades</button>
+        </div>
+
+        <div class="menu-panel" id="menu-panel-beef" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-card featured"><div class="menu-index">N1</div><div><h3>Truffe</h3><p>Double smash · fromage · champignons de Paris · sauce truffe maison</p></div><strong>65 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N2</div><div><h3>Jalapeños</h3><p>Double smash · cheddar · sauce jalapeño · oignons frais</p></div><strong>60 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N3</div><div><h3>Original</h3><p>Double smash · cheddar · iceberg · oignons · sauce originale</p></div><strong>60 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N4</div><div><h3>Beau</h3><p>Double smash · cheddar · roquette · oignons caramélisés · sauce maison</p></div><strong>60 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N5</div><div><h3>Le Frenchy</h3><p>Triple smash · trois fromages · bacon de bœuf · champignons · sauce truffe</p></div><strong>95 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N6</div><div><h3>Hash Brown</h3><p>Simple smash · cheddar · hash brown · iceberg · sauce maison</p></div><strong>55 DH</strong></article>
+          </div>
+        </div>
+
+        <div class="menu-panel hidden" id="menu-panel-chicken" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-card featured"><div class="menu-index">N10</div><div><h3>Le Ranch</h3><p>Escalope de poulet panée · iceberg · cheddar · sauce ranch</p></div><strong>55 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N11</div><div><h3>Spicy Chicken</h3><p>Escalope de poulet panée · iceberg · cheddar · sauce spicy maison</p></div><strong>50 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N12</div><div><h3>Nashville</h3><p>Filet de poulet pané · salade coleslaw · cornichons · sauce jalapeño</p></div><strong>60 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N14</div><div><h3>Le Crunch</h3><p>Hash brown · poulet pané · iceberg · cheddar · sauce fumée maison</p></div><strong>55 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">N15</div><div><h3>Chickenzilla</h3><p>Deux filets de poulet panés · double hash brown · cheddar · sauce miel</p></div><strong>75 DH</strong></article>
+          </div>
+        </div>
+
+        <div class="menu-panel hidden" id="menu-panel-sides" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-card"><div class="menu-index">F1</div><div><h3>Frites classiques</h3><p>Portion généreuse, prêtes à accompagner ton burger</p></div><strong>15 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">F2</div><div><h3>Frites cheddar</h3><p>Frites nappées de cheddar</p></div><strong>30 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">F3</div><div><h3>Frites bacon</h3><p>Frites, cheddar et bacon de bœuf</p></div><strong>40 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">F4</div><div><h3>Frites loaded</h3><p>Version généreuse à partager</p></div><strong>45 DH</strong></article>
+            <article class="menu-card"><div class="menu-index">S</div><div><h3>Salades</h3><p>Une sélection de salades est également proposée sur la carte.</p></div><strong>Carte</strong></article>
+            <article class="menu-card"><div class="menu-index">C1</div><div><h3>Chicken Fingers 5P</h3><p>Spicy honey · nachos · cheesy ou bacon</p></div><strong>30–60 DH</strong></article>
+          </div>
+        </div>
+
+        <p class="content-note">Menu retranscrit à partir d’une carte publiée publiquement. Certains détails peuvent évoluer ; la carte Instagram reste la référence commerciale la plus récente.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience-section section-dark">
+      <div class="container experience-grid">
+        <div class="experience-art">
+          <div class="art-frame"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/cf36-Beau-Burger-Oujda-french-fries.jpg" alt="Burger et frites Beau Burger"></div>
+          <div class="scribble" aria-hidden="true">fait<br>avec<br>envie.</div>
+        </div>
+        <div class="experience-copy">
+          <div class="eyebrow"><span class="dot" aria-hidden="true"></span> L'expérience Beau</div>
+          <h2>Un burger qui ne s’excuse pas d’être <em>gourmand.</em></h2>
+          <p>Le style est simple : de belles bouchées, des associations qui claquent et une carte qui donne envie de revenir. À Oujda, Beau Burger s’est construit autour de ce plaisir-là.</p>
+          <div class="experience-pills"><span>🍔 Smash</span><span>🔥 Chicken</span><span>🥔 Loaded fries</span></div>
+          <a class="btn btn-primary" href="https://www.instagram.com/beauburgeroujda/" target="_blank" rel="noopener noreferrer">Voir Beau sur Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-heading centered"><div class="eyebrow warm"><span class="dot" aria-hidden="true"></span> À table</div><h2>Ça se regarde. <em>Ça se mange.</em></h2></div>
+        <div class="gallery-grid">
+          <figure class="gallery-tile tall"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/ceba-Restaurant-Beau-Burger-dishes.jpg" alt="Burger signature Beau N°6"><figcaption>BEAU N°6 · SPICY HONEY</figcaption></figure>
+          <figure class="gallery-tile"><img src="assets/burger-placeholder.svg" data-src="https://img02.restaurantguru.com/cf36-Beau-Burger-Oujda-french-fries.jpg" alt="Beau Burger avec frites"><figcaption>BURGER · FRITES · SAUCE</figcaption></figure>
+          <figure class="gallery-tile dark-tile"><div class="quote-mark">“</div><blockquote>Vraiment beau burger.</blockquote><span>Avis public récent</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="infos" class="section info-section">
+      <div class="container info-grid">
+        <div>
+          <div class="eyebrow warm"><span class="dot" aria-hidden="true"></span> Trouve-nous</div>
+          <h2>À deux pas de <em>ton prochain burger.</em></h2>
+          <p class="muted">n5, Rue Annakhil<br>Oujda 34000, Maroc</p>
+          <div class="info-actions">
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Beau+Burger+Oujda" target="_blank" rel="noopener noreferrer">Itinéraire ↗</a>
+            <a class="btn btn-outline" href="tel:+212668080508">06 68 08 05 08</a>
+          </div>
+        </div>
+        <div class="hours-card">
+          <div class="hours-top"><span>HORAIRES</span><span id="openStatus" class="status-pill">Vérification…</span></div>
+          <div class="hours-row"><span>Lundi — Vendredi</span><strong>15:00 — 00:30</strong></div>
+          <div class="hours-row"><span>Samedi</span><strong>09:00 — 00:30</strong></div>
+          <div class="hours-row"><span>Dimanche</span><strong>Fermé</strong></div>
+          <p class="hours-note">Les horaires publiés en ligne peuvent évoluer. Vérifie avant de te déplacer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-dark">
+      <div class="container final-wrap">
+        <div><div class="eyebrow"><span class="dot" aria-hidden="true"></span> Beau Burger · Oujda</div><h2>Prêt pour ton <em>Beau&nbsp;?</em></h2></div>
+        <div class="final-actions"><a class="btn btn-primary" href="tel:+212668080508">Appeler / Commander</a><a class="btn btn-ghost" href="https://www.instagram.com/beauburgeroujda/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-dark">
+    <div class="container footer-grid">
+      <div><a class="brand" href="#top"><span class="brand-script">Beau</span><span class="brand-rest">BURGER</span></a><p>Le smash, à la façon Beau.</p></div>
+      <div><span class="footer-label">CONTACT</span><a href="tel:+212668080508">+212 668 08 05 08</a><a href="https://www.instagram.com/beauburgeroujda/" target="_blank" rel="noopener noreferrer">@beauburgeroujda</a></div>
+      <div><span class="footer-label">ADRESSE</span><span>n5, Rue Annakhil</span><span>Oujda 34000, Maroc</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Beau Burger</span><span>Site conçu pour une consultation rapide, mobile d’abord.</span></div>
+  </footer>
+
+  <div class="modal" id="menuModal" hidden aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle">
+      <button class="modal-close" type="button" aria-label="Fermer" data-close-modal>×</button>
+      <h2 id="menuModalTitle">La carte Beau Burger</h2>
+      <p>Version de carte publiée publiquement, utile pour consulter les intitulés et prix observés.</p>
+      <img src="assets/menu-placeholder.svg" data-src="https://menu02.restaurantguru.com/m4/menu-Beau-Burger-Restaurant-ts2.jpg" alt="Carte Beau Burger">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
